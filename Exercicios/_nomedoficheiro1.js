@@ -1,7 +1,7 @@
 //nomedoficheiro1.js
 // Executar a 1ª rede neutral -  Ensinar a lógica dos operadores xor, num ficheiro “nomedoficheiro1.js"
 // 
-import * as brain from 'brain.js';
+
     const brain = require('brain.js');
     const net = new brain.NeuralNetwork();
     net.train([
