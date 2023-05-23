@@ -14,8 +14,8 @@
  const output01 = parseFloat(net.run({entrada1:0, entrada2:1})).toFixed(0);  
 const output10 = parseFloat(net.run({entrada1:1, entrada2:0})).toFixed(0); 
 const output11 = parseFloat(net.run({entrada1:1, entrada2:1})).toFixed(0);
-  console.log('0 xor 0: ${output00}');
-  console.log('0 xor 1: ${output01}');
-  console.log('1 xor 0: ${output10}');
-  console.log('1 xor 1: ${output11}');
+  console.log('0 xor 0:', output00);
+  console.log('0 xor 1:', output01);
+  console.log('1 xor 0:', output10);
+  console.log('1 xor 1:', output11);
 // Guardem  e testem agora no terminal  node nomedoficheiro6
