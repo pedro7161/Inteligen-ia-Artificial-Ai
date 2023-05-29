@@ -15,7 +15,7 @@ net.train([
 const json = net.toJSON();
 const path = './model-xor.json';
 
-fs.writeFileSync(path,JSON.stringify(json));
+fs.writeFileSync(path, JSON.stringify(json));
 
 if (fs.existsSync(path)) {
     console.log('modelo salvo com sucesso.');

@@ -10,8 +10,8 @@ const data1 = [
     {input:[1,0], output:[1]},{input:[1,1], output:[0]}
 ];
 const data2 = [
-    {input:[0,0], output:[0]},{input:[0,1], output:[1]},
-    {input:[1,0], output:[1]},{input:[1,1], output:[0]}
+    {input:[0,0], output:[0]},{input:[0,1], output:[0]},
+    {input:[1,0], output:[0]},{input:[1,1], output:[1]}
 ];
 
 const options = { iteration:10000, errorThresh:0.004 };
@@ -23,7 +23,7 @@ Promise.all([t1,t2]).then(values => {
     const res2 = values[0];
     console.log(`treino 1 - xor\ntaxa de erro:${res1.error}\niteração: ${res1.iterations}`);
     console.log ('');
-    console.log(`treino 2 - xor\ntaxa de erro:${res2.error}\niteração: ${res2.iterations}`);
+    console.log(`treino 2 - and\ntaxa de erro:${res2.error}\niteração: ${res2.iterations}`);
     console.log ('');
 
     const xor00 = parseFloat(net1.run([0,0])).toFixed(0);
