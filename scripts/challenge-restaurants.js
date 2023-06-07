@@ -3,7 +3,7 @@ const brain = require('brain.js');
 // load restaurants data from file
 const restaurants = require('../data/restaurants.json');
 
-const networkOptions = { learningRate: 0.05 };
+const networkOptions = { learningRate: 0.0004 };
 const trainingOptions = { iterations:20000, errorThresh: 0.004, log: true };
 
 const crossValidate = new brain.CrossValidate(() => new brain.NeuralNetwork, networkOptions);
